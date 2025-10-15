@@ -1,19 +1,23 @@
 # Shoot The Balls
 
-**Shoot The Balls** este un joc arcade simplu, dezvoltat cu Python și framework-ul Kivy, în care scopul tău este să lovești "bilele" care cad de sus înainte ca acestea să atingă partea de jos a ecranului. Fii rapid, colectează monede și deblochează noi skin-uri!
+**Shoot The Balls** is a simple arcade game, developed with **Python** and the **Kivy** framework, where your main goal is to **hit the "balls"** falling from the top before they reach the bottom of the screen. Be quick, collect coins, and unlock new skins!
 
-## Caracteristici principale
+## Key Features
 
-* **Gameplay Arcade Clasic:** Lovitura distruge bilele inamice care cad de sus, dar pierzi o viață dacă o bilă atinge fundul ecranului.
-* **Sistem de Scorul și Nivele:** Scorul crește pe măsură ce lovești bilele, iar atingerea anumitor praguri de scor (multipli de 1000) crește nivelul și dificultatea jocului.
-* **Monede și Magazin (Shop):** Colectează monede (sunt bile speciale!) și folosește-le în magazin pentru a cumpăra skin-uri noi (de exemplu, `yellowBila.png` sau `greenBila.png`).
-* **Statistici Persistente:** Urmărește cel mai mare scor (`Highscore`) și istoricul tuturor jocurilor jucate, inclusiv data și ora, folosind o bază de date SQLite.
-* **Stil Pixel Art:** Jocul folosește o estetică simplă, cu grafică pixelată și un font personalizat.
+* **Classic Arcade Gameplay:** Hitting the falling balls destroys them, but you lose a life if a ball touches the bottom of the screen.
+* **Score and Level System:** The score increases as you hit balls. Reaching score thresholds (multiples of **1000**) increases the game's **level and difficulty**.
+* **Coins and Shop:** Collect special **coin balls** (`ShootTheBallsCoin.png`) and use the earned **Balance** in the **Shop Screen** (`ShopScreen`) to buy new enemy skins (e.g., `yellowBila.png` or `greenBila.png`).
+* **Persistent Statistics:** The application uses an **SQLite3** database (`stb.sqlite3`) to permanently track your **Highscore** and the history of all games played, including the precise date and time.
+* **Pixel Art Style:** The game features a straightforward, minimalist aesthetic with pixelated graphics and a custom **PixeboyFont.ttf** font.
+* **Music/Sound:** Includes a looped background music track (`troll.ogg`) that can be toggled on or off.
 
-## Tehnologii Utilizate
+---
 
-* **Limbaj:** Python 3
-* **Framework GUI:** Kivy
-* **Bază de date:** SQLite3 (pentru salvarea scorurilor și a istoricului jocurilor)
-* **Pachete Suplimentare:** `pytz` și `datetime` (pentru gestionarea datelor și a fusului orar în statistici)
-* **Compilare Mobilă:** Buildozer (pentru generarea pachetelor APK/AAB pentru Android).
+## Technologies Used
+
+* **Language:** Python 3
+* **GUI Framework:** Kivy
+* **Database:** SQLite3 (for game history, score, and datetime tracking)
+* **Data Persistence:** `JsonStore` (for managing coin balance and skin ownership) and `csv` (for skin prices).
+* **Time Management:** `pytz` and `datetime` (for correctly localizing and displaying game session times).
+* **Mobile Compilation:** **Buildozer** (configured for Android builds with dependencies like `python3`, `kivy`, `sqlite3`, `datetime`, and `pytz`).
