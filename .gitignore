@@ -1,46 +1,31 @@
-# Proiect Python/Kivy
-# Fișiere și directoare de build/compilare
 .buildozer/
 bin/
 *.spec.in
 
-# Kivy
-# Exclude-le dacă nu vrei să urmărești setările specifice ale mediului tău
-*.kv
-
-# Date generate de aplicație (presupunând că stb.sqlite3 stochează date de utilizator/sesiune)
 stb.sqlite3
 
-# Fișiere Buildozer
 *.apk
 *.aab
 *.exe
 *.dmg
 *.appimage
 
-# Dependențe Python
 .venv/
 venv/
 env/
 
-# Fișiere de compilare Python
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Jupiters Notebooks (dacă ar fi)
-.ipynb_checkpoints
 
-# Fișiere de log, temporare și alte date
 log.txt
 *.log
 *.tmp
 *.temp
 
-# IDE-uri populare (VS Code, IntelliJ)
 .vscode/
 .idea/
 
-# Fișiere specifice sistemului de operare
 .DS_Store
 Thumbs.db
